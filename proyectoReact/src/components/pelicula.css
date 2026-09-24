@@ -1,0 +1,17 @@
+.pelicula-contenedor{
+    background-color: bisque;
+    border: 2px solid chartreuse;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px auto;
+  max-width: 400px;
+  text-align: center;
+}
+.pelicula-contenedor img{
+max-width: 100%;
+border-radius: 8px;
+}
+.pelicula-contenedor h2{
+    color: brown;
+    margin-top: 10px;
+}

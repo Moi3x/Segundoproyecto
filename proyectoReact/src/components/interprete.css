@@ -1,0 +1,19 @@
+.interprete-contenedor {
+  background-color: #fff;
+  border: 2px solid #e74c3c;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 400px;
+  text-align: center;
+}
+
+.interprete-contenedor img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.interprete-contenedor h2 {
+  color: #e74c3c;
+  margin-top: 10px;
+}
