@@ -1,4 +1,8 @@
-import { calcularIMC, mediaEquipo ,equipoMayor,multiplicarNumero,impuestoProducto,numeroMeses} from "./Biblioteca/funciones.js";
+import { calcularIMC, mediaEquipo ,equipoMayor,multiplicarNumero,
+    impuestoProducto,numeroMeses ,esNumero,comprobarParidad,
+    comprobarSigno, esPrimo,analisisNumerico, mostrarAnalisis
+    ,mostrarMultiplosDeTres,calcularPotencia,calcularMedia,calculadora
+} from "./Biblioteca/funciones.js";
 
 // EJERCICIO 1
 
@@ -31,3 +35,27 @@ console.log(multiplicarNumero(4,7));
 console.log(impuestoProducto());
 
 console.log(numeroMeses(12));
+
+const resultado = analisisNumerico(7);
+if (resultado)mostrarAnalisis(resultado);
+else console.log("ERROR: El valor introducido no es un número.");
+mostrarMultiplosDeTres(20);
+const base=2 ;
+const exponente =7;
+const resultado2 = calcularPotencia(base,exponente);
+if (resultado2 === null){
+    console.log("ERROR: La base y el exponente deben ser números enteros.");
+}else{
+    console.log(`========== EJERCICIO 4 ==========`);
+    console.log(`Base: ${base}`);
+    console.log(`Exponente: ${exponente}`);
+    console.log(`Resultado: ${resultado2}`);
+    console.log("=================================");
+}
+const resultadoMedia = calcularMedia(10,20,30,40);
+if (resultadoMedia === null) {
+    console.log("ERROR: Debes introducir al menos un número entero positivo o cero.");
+}else{console.log(`La media de los numeros es ${resultadoMedia}`);}
+
+const calculadoraResultado = calculadora(2,2,"+");
+console.log(`El resultado es ${calculadoraResultado}`);
