@@ -9,6 +9,11 @@
 function calcularIMC(masa, altura) {
   return masa / (altura * altura);
 }
+/**
+ * Calcula la media de una lista de numeros usando `arguments`.
+ * Al no declarar parametros , acepta cualquier cantidad valores.
+ * @returns {number} la media aritmetica de todos los argumentos recibidos.
+ */
 function mediaEquipo() {
   let suma = 0;
   for (let i = 0; i < arguments.length; i++) {

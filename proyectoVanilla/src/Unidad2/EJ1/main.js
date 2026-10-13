@@ -1,3 +1,4 @@
+"use strict";
 import { calcularIMC, mediaEquipo ,equipoMayor,multiplicarNumero,
     impuestoProducto,numeroMeses ,esNumero,comprobarParidad,
     comprobarSigno, esPrimo,analisisNumerico, mostrarAnalisis
@@ -12,13 +13,13 @@ console.log(marcos);
 console.log("Masa Juan");
 const juan = calcularIMC(60, 160);
 console.log(juan);
-console.log(`Tiene Marcos un IMC mayor a Juan: ${marcos > juan}`);
+console.log(`Tiene Marcos 4;un IMC mayor a Juan: ${marcos > juan}`);
 
 // EJERCICIO 2
 
 const juanEquipo =mediaEquipo(89,120,103);
 const miguelEquipo=mediaEquipo(116,94,123);
-const MariaEquipo=mediaEquipo(97,134,105);
+const MariaEquipo=mediaAlberto(97,134,105);
 
 const r1 =equipoMayor("Juan",juanEquipo,"Miguel",miguelEquipo,"Maria",MariaEquipo);
 
@@ -59,3 +60,53 @@ if (resultadoMedia === null) {
 
 const calculadoraResultado = calculadora(2,2,"+");
 console.log(`El resultado es ${calculadoraResultado}`);
+
+
+import{calcularVelocidad ,mediaComida , ganadorTorneo , 
+    valorPotenciaX2, presupuestoObra,diaDeLaSemana}from "./Biblioteca/practica.js";
+//EJERCICIOS PRACTICA 
+const distanciaAna =12;
+const tiempoAna=1.2;
+const distanciaLuis =45;
+const tiempoLuis=1.7;
+const esMasRapida= velocidadAna > velocidadLuis
+const velocidadAna = calcularVelocidad(distanciaAna,tiempoAna);
+const velocidadLuis= calcularVelocidad(distanciaLuis,tiempoLuis);
+console.log(`Velocidad Ana:${velocidadAna.toFixed(2)}km/h`);
+console.log(`Velocidad Luis:${velocidadLuis.toFixed(2)}km/h`);
+console.log(`Ana es mas rapida que luis? :${esMasRapida}`);
+
+const mediaSara=mediaComida(2,3,5);
+const mediaLuis=mediaComida(4,6,7);
+const mediaAlberto=mediaComida(24,55,11);
+const resultado3=ganadorTorneo(
+    "Sara",mediaSara,
+    "Luis",mediaLuis,
+    "Alberto",mediaAlberto
+);
+if(resultado3.empate){
+    console.log(`Wow empate con la media${resultado3.mediaMasAlta}`);
+}else{
+    console.log(`Gana ${resultado3.nombreGanador}con media ${resultado3.mediaMasAlta}`);
+}
+console.log(valorPotenciaX2(2,8));
+
+console.log(presupuestoObra());
+console.log(presupuestoObra("Cocina",5000,20));
+
+console.log(diaDeLaSemana(3));
+console.log(diaDeLaSemana(9));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
