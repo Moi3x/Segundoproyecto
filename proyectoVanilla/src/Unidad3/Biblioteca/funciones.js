@@ -89,7 +89,7 @@ function asignarPropinas(facturaREAL){
 function asignarFacturaFinal(facturaREAL, propinasREAL){
   let arrayAuxiliar = [];
   for (let i = 0; i < facturaREAL.length; i++){
-    arrayAuxiliar[i] = facturaREAL[i] + propinasREAL[i]; // ✅ Corregido
+    arrayAuxiliar[i] = facturaREAL[i] + propinasREAL[i]; 
   }
   return arrayAuxiliar;
 }
@@ -99,6 +99,6 @@ function calculadoraDePropinas(...facturas){
   const propinasREAL = asignarPropinas(facturaREAL);
   const facturaFinal = asignarFacturaFinal(facturaREAL, propinasREAL);
   
-  return { facturaREAL, propinasREAL, facturaFinal }; // ✅ Añadido
+  return { facturaREAL, propinasREAL, facturaFinal }; 
 }
 

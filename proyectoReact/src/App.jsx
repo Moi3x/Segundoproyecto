@@ -2,11 +2,18 @@ import Interprete from "./components/Interprete";
 import React from "react";
 import Contenedor from "./components/Contenedor";
 import Pelicula from "./components/Pelicula";
+import verduras from "./components/U3_useState/Verduras";
 function App() {
   return (
     <>
       <section id="center">
         <p>Hola React</p>
+
+
+
+
+
+
         {/* <Contenedor>
         <Interprete 
           nombre='Feo' 
@@ -20,7 +27,7 @@ function App() {
 wwqdwqdqwd
       </Interprete>
       </Contenedor>*/}
-        <Pelicula
+       {/* <Pelicula
           nombre='Resident Evil'
           imagen='https://pimcore-content.cinepolis.com/assets/Espa%C3%B1a/Tickets/Movies/ResidentEvil/Es/720x1022_19.jpg'
           cartelera='yelmo cines'
@@ -28,7 +35,10 @@ wwqdwqdqwd
           resumen='va de zombis'
         >
           qwfwqfqwfqw
-        </Pelicula>
+        </Pelicula>*/}
+
+
+
       </section>
     </>
   );
