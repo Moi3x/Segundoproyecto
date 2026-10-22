@@ -1,12 +1,10 @@
 import React,{useState} from 'react';
-const Boton = ({nombre, funcion ,activo})=> {
+const Boton = ({nombre, funcion})=> {
     return (
     <button
-    disabled={!activo }
         className='Boton_boton'
-        onClick={()=>{
-            funcion();
-        }}
+        onClick={funcion}
+        
   > 
     {nombre}
   </button>  

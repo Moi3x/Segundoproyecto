@@ -14,7 +14,7 @@ const limpiar = ()=>{
 const reiniciar = ()=> {
     setListado(listadoInicial);
 };
-const añadir = ()=>{
+const añadir =()=>{
   setListado([...listado,generarVerduraAleatorio()]);
 };
 const borrar = (verdura)=>{
@@ -29,9 +29,9 @@ setListado(nuevasVerduras);
     <>
       <h2>Ejemplo con verduras</h2>
       <div className="butonera">
-      <Boton nombre='Limpiar' function={limpiar} activo={listado.length}/>  
-      <Boton nombre='Reiniciar' function={reiniciar} activo={listado.length}/> 
-      <Boton nombre='Añadir' function={añadir}activo={listado.length}/>
+      <Boton nombre='Limpiar' function={limpiar} />  
+      <Boton nombre='Reiniciar' function={reiniciar} /> 
+      <Boton nombre='Añadir' function={añadir}/>
       <Boton nombre='Borrar' 
         function={()=>{
           const verduraEliminada = generarVerduraAleatorio();
