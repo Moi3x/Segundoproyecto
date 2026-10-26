@@ -4,6 +4,7 @@ import Contenedor from "./components/Contenedor";
 import Pelicula from "./components/Pelicula";
 import verduras from "./components/U3_useState/Verduras";
 import Listado from "./components/U3_3.08_Estados_en_React/Listado";
+import ContadorLikes from "./components/U3_3.08_Estados_en_React/ContadorLikes";
 function App() {
   return (
     <>
@@ -32,7 +33,7 @@ wwqdwqdqwd
           qwfwqfqwfqw
         </Pelicula>*/}
         <div className="U3_08_ESTADO">
-          <Listado/>
+          <ContadorLikes></ContadorLikes>
         </div>
       </section>
     </>
