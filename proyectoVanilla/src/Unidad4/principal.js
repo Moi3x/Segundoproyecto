@@ -167,7 +167,7 @@ const crearConCE = () => {
   // 2.- Se crea el texto (contenido),
   let contenido = document.createTextNode(
     "Nuevo párrafo creado <strong class='nuevo'>dinámicamente</strong>",
-  );
+  ); 
   // 3.- Se añade el contenido (texto) al elemento,
   elemento.appendChild(contenido);
   // 4.- Se añade al DOM -> appendChild(nuevo), insertBefore(nuevo,existente),  removeChild(existente), replaceChild(nuevo,existente).
