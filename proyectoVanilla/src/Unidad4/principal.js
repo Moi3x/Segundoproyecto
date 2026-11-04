@@ -131,7 +131,7 @@ const pintarAzul = () => {
  *        -> length     número de clases del elemento DOM.
  *        -> contains   si contiene la clase indicada (devuelve un boleano).
  *        -> replace    sustituye la primera clase pasada como parámetro por la segunda.
- *d */
+ * */
 
 const primero = document.getElementById("primero");
 primero.classList.add("verde");
