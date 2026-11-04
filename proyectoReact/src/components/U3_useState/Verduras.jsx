@@ -25,6 +25,7 @@ const nuevasVerduras = listado.filter((v,i,a)=>{
 });
 setListado(nuevasVerduras);
 };
+let contenido;
   return (
     <>
       <h2>Ejemplo con verduras</h2>
@@ -42,6 +43,7 @@ setListado(nuevasVerduras);
       </div>
     
       <div>
+        
         {Array.isArray(listado) && listado.length
           ? (<VerdurasListado datos ={listado}/>
            ) : (
