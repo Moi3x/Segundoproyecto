@@ -4,7 +4,12 @@ import {
     contarParrafos,
     contarSegundoParrafo,
     seleccionarPenultimoEnlace,
-    seleccionarPrimerEnlace
+    seleccionarPrimerEnlace,
+    contarB,
+    textoB,
+    numEnlacesFiltrados,
+    numSup,
+    ultimoTitle
 } from "./contarElementos.js";
 // Primer ejercicio
 setTimeout(() => {
@@ -20,3 +25,19 @@ const penultimoENlace=seleccionarPenultimoEnlace();
       <p>El segndo parrafo es: ${penultimoENlace}</p> `,
     );
   }, 2000);
+//Primer ejercicio otra manera de hacerlo 
+setTimeout(() => {
+  const destino2 = document.getElementById("info");
+  const contarBs=contarB();
+  const buscarPorEnlaces=numEnlacesFiltrados();
+  const numerodeSup=numSup();
+  const ultimoTitutlo=ultimoTitle();
+  destino2.insertAdjacentHTML(
+    `beforeend`,
+    `<p>El numero total de b es: ${contarBs}</p>
+     <p>El segundo texto a leer es:${textoB()}</p>
+     <p>El numero de enlaces que apuntar a citi_note-2 es:${buscarPorEnlaces}</p>
+     <p>El numero de total de sup en la pagina es : ${numerodeSup}</p>
+     <p>El ultimo titulo del enlac es: ${ultimoTitutlo}</p>`
+  );
+},2000);
