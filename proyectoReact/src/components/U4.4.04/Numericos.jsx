@@ -1,11 +1,8 @@
-import React ,{createContext, createElement, useRef, useState} from "react";
-import { StrictMode } from 'react'
+import generarAleatorio from "./Biblioteca/GenerarAleatorio";
 
 const Numericos =()=>{
 const referencia=useRef(null);
-const generarAleatorio=()=>{
-    return (Math.floor(Math.random()*1000)+1);
-};
+
 const añadirElementoAlInner=(referencia)=>{
 referencia.current.innerHTML=`${referencia.current.innerHTML}<li>El numero aleatorio es : ${generarAleatorio()}</li>`;
 };
@@ -15,6 +12,9 @@ let texto=document.createTextNode(generarAleatorio());
 li.appendChild(texto);
 referencia.current.appendChild(li);
 };
+const borrarReferencia=(referencia)=>{
+  referencia.current.innerHTML="";
+};
 return (
     <>
     <div>
@@ -23,6 +23,7 @@ return (
     </ol>
     </div>
     <button onClick={()=>añadirElementoAlInner(referencia)}>Otro ejemplo</button>
+    <button onclick={()=>{borrarReferencia(referencia)}}>borrar numeros</button>
     </>
 )
 
