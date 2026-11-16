@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet, } from "react-router-dom";
+import Cabecera from "../estructura/Cabecera";
 const Menu = () => {
   return (
     <>
@@ -32,9 +33,16 @@ const Menu = () => {
                   Productos
                 </Link>
               </li>
+              <li>
+                <Link to="/Pelicula/Peliculas" style={estilos.paginapeliculas}>
+                Pagina Pelicula
+                </Link>
+              </li>
+            
               //continuo asi con lo demas
             </ul>
           </nav>
+          <Outlet/>
         </header>
       </div>
     </>

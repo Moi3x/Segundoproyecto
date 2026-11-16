@@ -1,6 +1,6 @@
 import React from "react";
-import "./Cabecera.css";
-import Menu from "../menu/Menu.jsx";
+import Menu from "../../../components/U4_4.06/menu/Menu.jsx";
+
 
 const Cabecera = () => {
   return (

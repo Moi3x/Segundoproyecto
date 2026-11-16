@@ -1,5 +1,5 @@
 import React from "react";
-import Cabezera from "../menu/Cabecera.jsx";
+import Cabecera from "./Cabecera";
 const Pie =()=>{
 
     return (

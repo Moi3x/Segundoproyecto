@@ -10,8 +10,10 @@ const Rutas = () => {
           <Route path="/productos" element={<Productos />} />
           <Route path="/acercade" element={<AcerdaDe />} />
           <Route path="*" element={<Error />} />
+          <Route path="/PaginaPeliculas"element={<PaginaPeliculas/>}/>
         </Routes>
       </div>
     </>
   );
 };
+export default Rutas;
