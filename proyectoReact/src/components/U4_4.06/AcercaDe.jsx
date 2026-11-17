@@ -5,20 +5,7 @@ const AcercaDe=()=>{
     return(
         <>
         <div className="acercaDe">
-            <p>momenwmqwopjjjjjjj
-                wqfwqfqwffffffffwq
-                wqfwqfqwffffffffwqfwqwcx
-                wqfwqfqwffffffffwqfwqwcxqc
-                <q>classNamewqc
-                wqfwqfqwffffffffwqfwqwcxwqc
-                wqfwqfqwffffffffwqfwqwcxwqccwq
-                classNamecwq
-                classNamec
-                wqfwqfqwffffffffwqfwqwcxwqccwqc
-                classNamewqccw
-                qcwq
-                 </q>
-            </p>
+            <p>fdsfsd</p>
             <br/><br/>
         <button 
         onClick={()=>{

@@ -1,5 +1,45 @@
 import { Link, Outlet, } from "react-router-dom";
 import Cabecera from "../estructura/Cabecera";
+const estilos = {
+    header: {
+        backgroundColor: "#222",
+        padding: "20px",
+        color: "white"
+    },
+    logo: {
+        fontSize: "25px",
+        fontWeight: "bold",
+        marginBottom: "15px"
+    },
+    lista: {
+        display: "flex",
+        gap: "25px",
+        listStyle: "none",
+        padding: "0",
+        margin: "0",
+        alignItems: "center"
+    },
+    enlace: {
+        color: "white",
+        textDecoration: "none"
+    },
+    contacto: {
+        color: "white",
+        textDecoration: "none"
+    },
+    acercade: {
+        color: "white",
+        textDecoration: "none"
+    },
+    productos: {
+        color: "white",
+        textDecoration: "none"
+    },
+    peliculas: {
+        color: "white",
+        textDecoration: "none"
+    }
+};
 const Menu = () => {
   return (
     <>
@@ -33,12 +73,14 @@ const Menu = () => {
                   Productos
                 </Link>
               </li>
-              <li>
-                <Link to="/Pelicula/Peliculas" style={estilos.paginapeliculas}>
+                <Link to="/paginaspeliculas" style={estilos.peliculas}>
                 Pagina Pelicula
                 </Link>
+              <li>
+                <Link to="/paginaspeliculas/peliculas" style={estilos.peliculas}>
+                Peliculas
+                </Link>
               </li>
-            
               //continuo asi con lo demas
             </ul>
           </nav>
