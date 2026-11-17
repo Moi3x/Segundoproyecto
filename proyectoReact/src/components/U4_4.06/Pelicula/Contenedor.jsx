@@ -1,12 +1,12 @@
 import './contenedor.css';
 import React from 'react';
 
-const Contenedor = (props)=> {
+const Contenedor = ({children})=> {
     return (
         <>
         <div className='contenedor-contenedor'>
-            <p> essto es un contenedor</p>
-            <h2> {props.children}</h2>
+            <p> Contenedor</p>
+            <div> {children}</div>
         </div>
         </>
     );

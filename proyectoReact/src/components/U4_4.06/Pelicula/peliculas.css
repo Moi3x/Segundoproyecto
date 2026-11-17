@@ -11,6 +11,10 @@
 max-width: 100%;
 border-radius: 8px;
 }
+.oculto{
+  display: none;
+}
+
 .pelicula-contenedor h2{
     color: brown;
     margin-top: 10px;

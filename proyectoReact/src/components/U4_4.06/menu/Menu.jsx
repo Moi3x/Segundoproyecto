@@ -64,7 +64,7 @@ const Menu = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/acerdade" style={estilos.acercade}>
+                <Link to="/acercade" style={estilos.acercade}>
                   AcercaDe....
                 </Link>
               </li>
@@ -73,18 +73,17 @@ const Menu = () => {
                   Productos
                 </Link>
               </li>
-                <Link to="/paginaspeliculas" style={estilos.peliculas}>
+              <li>
+                <Link to="/paginapeliculas" style={estilos.peliculas}>
                 Pagina Pelicula
                 </Link>
-              <li>
-                <Link to="/paginaspeliculas/peliculas" style={estilos.peliculas}>
-                Peliculas
-                </Link>
-              </li>
-              //continuo asi con lo demas
+                </li>
+              
+             
             </ul>
+           
           </nav>
-          <Outlet/>
+           
         </header>
       </div>
     </>

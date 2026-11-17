@@ -1,5 +1,6 @@
 import React from "react";
 import "./interprete.css";
+import Peliculas from "../../../data/Peliculas.json";
 
 const Interprete = (props)=> {
     //Javascrip vanilla
@@ -8,9 +9,13 @@ const Interprete = (props)=> {
         //JSX
         <>
         <div className='interprete-contenedor'>
-        <img src={props.imagen}/>
         <h2> {props.nombre}</h2>
-        <h4>{props.children}</h4>
+        <div>
+        <img src={props.cartelera} alt={props.nombre}/>
+        </div>
+        <div>
+            <h2> {props.resumen}</h2>
+        </div>
         </div>
         </>
     );

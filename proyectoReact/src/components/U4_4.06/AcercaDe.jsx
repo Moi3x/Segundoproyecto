@@ -5,7 +5,7 @@ const AcercaDe=()=>{
     return(
         <>
         <div className="acercaDe">
-            <p>fdsfsd</p>
+            <p>holaaaaaa</p>
             <br/><br/>
         <button 
         onClick={()=>{
