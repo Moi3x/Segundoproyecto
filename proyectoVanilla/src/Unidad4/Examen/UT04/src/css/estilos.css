@@ -1,0 +1,251 @@
+/* Tarjeta de evento */
+.tarjeta-evento {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Evento destacado */
+.destacado {
+  background-color: #fff9db;
+  border: 2px solid #e0b400;
+}
+
+/* Evento favorito */
+.evento-favorito {
+  background-color: #d3f9d8;
+  border: 2px solid #2b8a3e;
+}
+
+/* Alerta de error */
+.alerta-error {
+  color: #c92a2a;
+  background-color: #ffe3e3;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* Etiqueta general */
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  background-color: #e9ecef;
+  font-size: 0.85em;
+}
+
+/* Etiqueta de aviso de aforo */
+.badge-aforo {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  background-color: #e03131;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.85em;
+}
+
+/* *****************************************
+   Estilos generales
+***************************************** */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eeeeee;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* *****************************************
+   Cabecera principal
+***************************************** */
+
+#cabeceraPrincipal {
+  background-color: #171717;
+  color: #ffffff;
+  padding: 35px 20px;
+  text-align: center;
+  border-bottom: 4px solid #777;
+}
+
+#cabeceraPrincipal h1 {
+  margin: 0 0 20px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.panel-info {
+  background-color: #303030;
+  color: #eeeeee;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 15px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* *****************************************
+   Panel de control
+***************************************** */
+
+#panelControl {
+  background-color: #ffffff;
+  padding: 25px;
+  margin: 25px auto;
+  max-width: 1200px;
+  border-radius: 10px;
+  border: 1px solid #d0d0d0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+#botoneraAcciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+#botoneraAcciones button {
+  background-color: #292929;
+  color: white;
+  border: 1px solid #292929;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+#botoneraAcciones button:hover {
+  background-color: #ffffff;
+  color: #222222;
+  border-color: #222222;
+  transform: translateY(-2px);
+}
+
+#botoneraAcciones button:focus-visible {
+  outline: 3px solid #777;
+  outline-offset: 3px;
+}
+
+/* *****************************************
+   Mensajes de usuario
+***************************************** */
+
+.mensajes-usuario {
+  margin-top: 18px;
+  padding: 12px;
+  border-radius: 6px;
+  background-color: #f2f2f2;
+  border: 1px solid #dddddd;
+  color: #333333;
+}
+
+/* *****************************************
+   Catálogo de eventos
+***************************************** */
+
+.grid-catalogo {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+}
+
+/* *****************************************
+   Tarjetas de eventos
+***************************************** */
+
+.tarjeta-evento {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.tarjeta-evento:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* *****************************************
+   Etiquetas
+***************************************** */
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  background-color: #e5e5e5;
+  color: #333333;
+  font-size: 0.85em;
+}
+
+.badge-aforo {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  background-color: #292929;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.85em;
+}
+
+/* *****************************************
+   Eventos destacados y favoritos
+***************************************** */
+
+.destacado {
+  background-color: #e8e8e8;
+  border: 2px solid #777777;
+}
+
+.evento-favorito {
+  background-color: #d9d9d9;
+  border: 2px solid #333333;
+}
+
+/* *****************************************
+   Alertas
+***************************************** */
+
+.alerta-error {
+  color: #222222;
+  background-color: #e0e0e0;
+  font-weight: bold;
+  padding: 12px;
+  border-left: 5px solid #333333;
+  border-radius: 4px;
+}
+
+/* *****************************************
+  Pie de página
+***************************************** */
+
+#piePagina {
+  background-color: #171717;
+  color: #cccccc;
+  text-align: center;
+  padding: 22px;
+  margin-top: 45px;
+  border-top: 3px solid #777777;
+}
+
+#piePagina p {
+  margin: 0;
+  font-size: 0.9rem;
+}
